@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: immortalwrt Builder
+name: immortalwrt_高通410系列
 
 on:
   repository_dispatch:

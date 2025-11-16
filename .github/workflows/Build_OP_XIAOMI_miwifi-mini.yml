@@ -14,7 +14,7 @@ on:
           - false
   
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
   CONFIG_FILE: 'config/XIAOMI_mini.config'
   REPO_BRANCH: master
   UPLOAD_BIN_DIR: true

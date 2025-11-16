@@ -83,7 +83,6 @@ jobs:
           echo "❌ Error: Config file ${CONFIG_FILE} not found!"
           exit 1
         fi
-        chmod +x ./scripts/customize.sh && ./scripts/customize.sh
         [[ -d "files" ]] && mv -f files openwrt/files
         cp -fv "${CONFIG_FILE}" openwrt/.config
         cd openwrt && make defconfig

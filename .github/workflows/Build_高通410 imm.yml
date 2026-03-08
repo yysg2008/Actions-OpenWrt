@@ -76,10 +76,14 @@ jobs:
         
     - name: Ensure Python build tools
       run: |
-        python3 -m pip install --upgrade pip setuptools wheel
-        python3 -m pip --version
-        python3 -c "import setuptools.build_meta; print('setuptools.build_meta OK')"
-        python3 -m pip install Unidecode pyelftools
+       python3 -m pip cache purge
+       python3 -m pip install --upgrade --force-reinstall pip
+       python3 -m pip install --upgrade --force-reinstall 'setuptools>=65' wheel
+       python3 -m pip install --upgrade 'setuptools-scm>=8,<10'
+       python3 -m pip --version
+       python3 -c "import setuptools.build_meta; print('setuptools.build_meta OK')"
+       python3 -m pip install Unidecode pyelftools
+
 
     - name: Clone source code
       working-directory: /mnt

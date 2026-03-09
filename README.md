@@ -4,13 +4,17 @@
 网络模式切换命令 ssh登录默认root目录执行
 
 ./ncm.sh ncm       # 切换到 NCM
+
 ./ncm.sh ecm       # 切换到 ECM
+
 ./ncm.sh rndis     # 切换到 RNDIS
 
 默认usb网络模式是rndis
 
 主机切换命令方式ssh登录默认root目录执行
+
 ./usb.sh 1        # 也是 Host 模式
+
 ./usb.sh          # 默认 Gadget 模式
 
 
